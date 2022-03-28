@@ -13,7 +13,7 @@ const main = async () => {
         
         Her brain was put in a simulacrum shell, but in the process, she lost years of memories, and the trauma of her “death” caused her personality to fracture. Ash is the embodiment of the cold, perfectionistic, power-hungry side of Dr. Reid. But behind that confident facade, something sinister is simmering. After an encounter with Horizon that overrides Ash’s simulacrum programming, the framework that kept the vulnerable--yet intelligent--Leigh personality dormant has begun to crack. Ash joins the Games to prove she has transcended all humanity. Leigh’s determined to prove her wrong.`,
         tag_line: 'Incisive Instigator',
-        img: 'https://media.contentapi.ea.com/content/dam/apex-legends/common/legends/ash/apex-section-bg-legends-ash-xl.jpg.adapt.320w.jpg',
+        img: 'https://media.contentapi.ea.com/content/dam/apex-legends/common/legends/ash/apex-grid-tile-legends-ash.png.adapt.crop16x9.1023w.png',
     })
     ash.save();
 
@@ -23,7 +23,7 @@ const main = async () => {
 
         In the months following the Battle at Gridiron, the IMS Hestia, with Anita and brother Jackson on board, was attacked by unknown assailants. A bomb on the outer hull blew out a chunk of the ship… but not before Jackson shielded her, sacrificing his own life to save hers. Anita watched helplessly, as Jackson was sucked out into the vacuum of space. After crashing on a Syndicate planet, Anita looked for both work, and the brother she refused to believe had died, so they could begin the decades-long trip back home. Now, she fights to raise money in the Apex Games, in the hopes of finding a pilot willing to take the epic trip back home to reunite with what remains of her family.`,
         tag_line: `Professional Soldier`,
-        img: `https://media.contentapi.ea.com/content/dam/apex-legends/common/legends/apex-section-bg-legends-bangalore-xl.jpg.adapt.320w.jpg`
+        img: `https://image.pngaaa.com/376/1988376-middle.png`
     })
     bangalore.save();
 
@@ -33,7 +33,7 @@ const main = async () => {
 
         Bloodhound’s unparalleled tracking skills are a boon to any team they join, helping them root out hidden opponents and track enemy movements. Calling on Earth’s Old Norse Gods to guide them, Bloodhound believes that destiny is a path that has already been laid out, eventually carrying all to their death. But with that knowledge comes strength, because until that day comes, Bloodhound knows they can’t be stopped.`,
         tag_line: `Technological Tracker`,
-        img: `https://media.contentapi.ea.com/content/dam/apex-legends/common/legends/apex-section-bg-legends-bloodhound-xl.jpg.adapt.320w.jpg`
+        img: `https://media.contentapi.ea.com/content/dam/apex-legends/images/2019/01/legends-character-tiles/apex-grid-tile-legends-bloodhound.png.adapt.crop16x9.1023w.png`
     })
     bloodhound.save();
 
@@ -43,7 +43,7 @@ const main = async () => {
 
         As he toiled in secret, Nox began to see the beauty in his creations and their ability to destroy anything they touched. But the head of Humbert Labs soon discovered his gruesome experiments, and their confrontation ended with the lab in flames. Now, competing under the name Caustic, he puts his gaseous creations to work in the Apex Games and observes their effects with great interest.`,
         tag_line: `Toxic Trapper`,
-        img: `https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/e/e7/Caustic.jpg/revision/latest/scale-to-width-down/314?cb=20200916154650`
+        img: `https://www.pngfind.com/pngs/m/253-2534460_we-are-here-to-give-best-tips-for.png`
     })
     caustic.save();
 
@@ -53,7 +53,7 @@ const main = async () => {
 
         An orphan abandoned at a young age, Tae Joon escaped a life of squalor by becoming a computer engineer for the Mercenary Syndicate, along with his foster sister, Mila Alexander. One day, Tae Joon and Mila stumbled upon an algorithm that could predict the result of any Apex Games match, hidden away in the Games’ own computer systems. That caught the attention of the wrong people - the next day, Mila disappeared, and Tae Joon was forced to into hiding after he was framed for her murder. He’s now joined the Games to clear his name - because sometimes the spotlight is the best place to hide.`,
         tag_line: `Surveillance Expert`,
-        img: `https://media.contentapi.ea.com/content/dam/apex-legends/common/legends/apex-section-bg-legends-crypto-xl.jpg.adapt.320w.jpg`
+        img: `https://media.contentapi.ea.com/content/dam/apex-legends/images/2019/01/legends-character-tiles/apex-grid-tile-legends-crypto.png.adapt.crop16x9.1023w.png`
     })
     crypto.save();
 
@@ -63,7 +63,7 @@ const main = async () => {
 
         Fuse grew up on Salvo--a brutal planet ruled by a rotating collection of misfit warlords bent on mayhem, murder, and good times. For most of his life, he worked as a mercenary alongside his childhood friend, Maggie. But while she aspired to become one of Salvo’s most powerful warlords, Fuse felt the pull of the arena. Fuse found his calling late in life fighting in Salvo’s bloodsport: the Bonecage. He proved to be the best, most charismatic and beloved gladiator on the planet. But he itched to join the grandest stage of them all: the Apex Games. While Salvo remained a part of Independent Space that dream was impossible, but once they joined the Syndicate, his chance arrived. It came at a price, however -- Maggie wouldn’t let him go without a fight.`,
         tag_line: `Bombastic Explosives Expert`,
-        img: `https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/2/25/Fuse.jpg/revision/latest/scale-to-width-down/314?cb=20210129173412`
+        img: `https://liquipedia.net/commons/images/thumb/b/b1/Fuse_Banner.png/600px-Fuse_Banner.png`
     })
     fuse.save();
 
@@ -73,7 +73,7 @@ const main = async () => {
 
         The Apex Games didn’t change that, but they changed what it meant. Many of Gibraltar’s friends and colleagues have competed in the Games for extra money, fame, and glory over the years, and some never came home. Gibraltar joined to keep them safe and, for the first time, his skills as a rescuer and his rebellious nature worked together. He’s now become an icon in the Apex Games, putting himself in the line of fire to protect his squad and send his opponents running for cover.`,
         tag_line: `Shielded Fortress`,
-        img: `https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/8/8b/Gibraltar.jpg/revision/latest/scale-to-width-down/314?cb=20200916154804`
+        img: `https://static.wikia.nocookie.net/titanfall/images/9/9a/AL_Gibraltar_Portrait.png/revision/latest?cb=20200515150512`
     })
     gibraltar.save();
 
@@ -87,7 +87,7 @@ const main = async () => {
         
         Now Mary is determined to fund her research to find a way to go back in time and be with her son. She joins the Apex Games as Horizon, master of gravity, just in time for the next season to debut on Olympus--where her old life once was and where she had promised to return.`,
         tag_line: `Gravitational Manipulator`,
-        img: `https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/7/7d/Horizon.jpg/revision/latest/scale-to-width-down/314?cb=20201102162249`
+        img: `https://media.contentapi.ea.com/content/dam/apex-legends/images/2020/10/horizon/apex-grid-tile-legends-horizon.png.adapt.crop16x9.1023w.png`
     })
     horizon.save();
 
@@ -97,7 +97,7 @@ const main = async () => {
 
         Since no one in the Games is innocent — they all know what they signed up for — and every one of her victories means help for those in need, Lifeline has no problem engaging in the popular bloodsport. Or so she tells herself. She may seem sarcastic and callous, but deep down she wants to help people and make the world a better place. If that means taking a few people down in the process, so be it.`,
         tag_line: `Combat Medic`,
-        img: `https://media.contentapi.ea.com/content/dam/apex-legends/common/legends/apex-section-bg-legends-lifeline-xl.jpg.adapt.320w.jpg`
+        img: `https://static.wikia.nocookie.net/titanfall/images/2/22/AL_Lifeline_Portrait.png/revision/latest?cb=20200515151002`
     })
     lifeline.save();
 
@@ -108,7 +108,7 @@ const main = async () => {
         
         Revenge will come, if fortune favors her. In the meantime, some shiny things have caught her eye.`,
         tag_line: `Translocating Thief`,
-        img: `https://media.contentapi.ea.com/content/dam/apex-legends/common/legends/apex-section-bg-legends-loba-xl.jpg.adapt.320w.jpg`
+        img: `https://media.contentapi.ea.com/content/dam/apex-legends/images/2020/05/apex-grid-tile-legends-loba.png.adapt.crop16x9.1023w.png`
     })
     loba.save();
 
@@ -121,7 +121,7 @@ const main = async () => {
         
         It seemed as though Maggie fell to her death after that exchange...But she was apprehended by the Syndicate, and sentenced to fight to the death in the Apex Games. So she will: just not hers.`,
         tag_line: `Rebel Warlord`,
-        img: `https://media.contentapi.ea.com/content/dam/apex-legends/common/legends/mad-maggie/screenshots/apex-section-bg-legends-maggie-xl.jpg.adapt.320w.jpg`
+        img: `https://media.contentapi.ea.com/content/dam/apex-legends/common/legends/mad-maggie/apex-grid-tile-legends-maggie.png.adapt.crop16x9.1023w.png`
     })
     mad_maggie.save();
 
@@ -131,7 +131,7 @@ const main = async () => {
 
         While working as a bartender to make ends meet, Mirage heard amazing stories from his patrons about the Apex Games and the wealth and glory that came with victory. As good as both of those sounded, he knew he couldn’t risk leaving his mother childless – until she gave him a set of customized holo devices and told him to follow his dream. Mirage is now the life of the Apex Games, outwitting opponents and charming audiences across the Outlands.`,
         tag_line: `Holographic Trickster`,
-        img: `https://media.contentapi.ea.com/content/dam/apex-legends/common/legends/apex-section-bg-legends-mirage-xl.jpg.adapt.320w.jpg`
+        img: `https://media.contentapi.ea.com/content/dam/apex-legends/images/2019/01/legends-character-tiles/apex-grid-tile-legends-mirage.png.adapt.crop16x9.1023w.png`
     })
     mirage.save();
 
@@ -141,7 +141,7 @@ const main = async () => {
 
         As he lay in triage hours later, the doctors informed him that the damage done to his legs meant his daredevil days were over. That didn’t sit well with Octavio, who turned to an old friend for help: Ajay Che, who he guilted into forging an order to replace his legs with bionic ones. Suddenly able to repair his limbs at a moment’s notice, Octavio decided petty online stunts weren’t enough: the ultimate adrenaline rush, the Apex Games, was calling. Now, he’s going to become an Apex Champion doing the most incredible, death-defying moves anyone’s ever seen. Maybe in the arena, he won’t be so bored.`,
         tag_line: `High-Speed Daredevil`,
-        img: `https://static.wikia.nocookie.net/apex-legends-universe/images/3/33/326-3267162_apex-legends-octane-apex-legends-octane-png-transparent.png/revision/latest?cb=20200212145108`
+        img: `https://www.vhv.rs/dpng/d/582-5827654_octane-apex-legends-png-transparent-png.png`
     })
     octane.save();
 
@@ -150,7 +150,7 @@ const main = async () => {
         description: `Pathfinder is the picture of optimism, despite his circumstances. A MRVN (Mobile Robotic Versatile eNtity) modified to specialize in location scouting and surveying, he booted up decades ago in an abandoned warehouse with no idea who created him or why. With only his MRVN designation to hint at his identity, Pathfinder eventually set off in search of his creator.
         Pathfinder has learned much in his travels since then (like how to make a mean Eastern Leviathan Stew) but hasn’t come any closer to finding his creator. Still, he’s never given up hope, and has joined the Apex Games to gain a following--and hopefully draw the attention of his maker. In the meantime, he remains enthusiastic and helpful, always ready to make new friends (then shoot them).`,
         tag_line: `Forward Scout`,
-        img: `https://static.wikia.nocookie.net/apex-legends-universe/images/1/17/Apex-legends-pathfinder-character-art-01-ps4-us-25feb19.png/revision/latest?cb=20200211150529`
+        img: `https://www.pikpng.com/pngl/m/253-2534529_we-are-here-to-give-best-tips-for.png`
     })
     pathfinder.save();
 
@@ -160,7 +160,7 @@ const main = async () => {
 
         Parekh never shied away from letting people know how great she was, or better yet, how bad they were. Maybe that’s what led a group of assailants to ambush her at her shop one night. Her business burned down and she was left with nothing -- except an Apex Card. For Parekh, the Apex card is more than just an invitation to compete - it's a sign that she may have lost her shop, but she didn't lose what built it. Like her motto says, she's the kind of person who can always "turn crap into gold.”`,
         tag_line: `Amped Modder`,
-        img: `https://media.contentapi.ea.com/content/dam/apex-legends/common/season-6/rampart/apex-section-bg-legends-rampart-xl.jpg.adapt.320w.jpg`
+        img: `https://media.contentapi.ea.com/content/dam/apex-legends/images/2020/08/rampart/apex-grid-tile-legends-rampart.png.adapt.crop16x9.1023w.png`
     })
     rampart.save();
 
@@ -169,7 +169,7 @@ const main = async () => {
         description: `Revenant used to be human. He used to be the greatest hitman the Mercenary Syndicate ever had. He used to look in the mirror and see his human face looking back. But time changes everything, and when his programming finally failed, he saw what he had become at the hands of the Mercenary Syndicate and Hammond Robotics: a walking nightmare of steel and vestigial flesh. His masters resurrected him as a simulacrum, snatching him from death’s embrace again and again and programming him to forget.
         He swore he would hunt down every last person who did this to him, but more than two centuries have passed, and they're all gone… or so he thought. The return of Hammond Robotics to the Outlands has renewed his thirst for vengeance, and he won’t stop until anybody connected to Hammond is dead. Of course, he doesn’t mind eviscerating a few of the Legends along the way. He used to need a reason to kill… but he’s not that man anymore.`,
         tag_line: `Synthetic Nightmare`,
-        img: `https://static.wikia.nocookie.net/apex-legends-universe/images/d/dc/Apex-legends-season-4-character-01-ps4-30jan20-en-us.png/revision/latest?cb=20200228160157`
+        img: `https://media.contentapi.ea.com/content/dam/apex-legends/images/2020/02/apex-legend-revenant-grid-tile.png.adapt.crop16x9.1023w.png`
     })
     revenant.save();
 
@@ -179,7 +179,7 @@ const main = async () => {
 
         At first, the crowds felt unsure of him. But over time, with each victory, the power inside him grew, and with it, his strength in the Arena. And as his reputation began to precede him, a strange thing happened… The people in the crowd who were downtrodden, outcast, and forgotten—they saw themselves in Seer. Soon, throngs of people would come out just to see him fight—cheering Seer on as their champion. Now, this legend from the Arenas is making his way to the Apex Games and there isn’t a single soul who hasn’t already heard his name. The boy born under a bad omen and a terrible myth has taken this tale and created an even greater legend. He is Seer— an icon of the shunned, the unaccepted, and the unabashedly original.`,
         tag_line: `Ambush Artist`,
-        img: `https://media.contentapi.ea.com/content/dam/apex-legends/common/legends/seer/apex-section-bg-legends-seer-l.jpg.adapt.320w.jpg`
+        img: `https://media.contentapi.ea.com/content/dam/apex-legends/images/2021/07/seer-assets/apex-grid-tile-legends-seer.png.adapt.crop16x9.1023w.png`
     })
     seer.save();
     
@@ -191,12 +191,28 @@ const main = async () => {
         
         Using the intact flight core from Viper’s Northstar, she built a sleek new jetpack that honored her father’s memory. And that was when Kairi could finally soar on her own… and in a version of her dad’s Titan, that ended up being hers after all.`,
         tag_line: `Winged Avenger`,
-        img: `https://media.contentapi.ea.com/content/dam/apex-legends/common/legends/valkyrie/apex-section-bg-legends-valkyrie-xl.jpg.adapt.320w.jpg`
+        img: `https://media.contentapi.ea.com/content/dam/apex-legends/images/2021/04/apex-grid-tile-legends-valkyrie.png.adapt.crop16x9.1023w.png`
     })
     valkyrie.save();
 
+    const wattson = await new Legend({
+        name: `Wattson`,
+        description: `Natalie “Wattson” Paquette is a familiar face in the Apex Games, though for a different reason than most. Daughter of the Games’ lead electrical engineer, she studied his manuals to stay close to him, and discovered her calling at a young age. Though she could be completely distracted one moment and hyper-focused the next, electricity grounded her – its ordered, predictable flow made sense in a way the rest of the world didn’t.
 
+        She devoured every book she could on the subject, and eventually became such a skilled engineer that she was commissioned to build the Apex Games’ Modified Containment Ring. Unfortunately, her father died the day it was revealed, leaving her alone. At her lowest moment, a group of competitors invited her to return to the arena with them, assuring her she would always have a home. She now fights alongside her friends in the arena she helped build, destroying incoming missiles, recharging shields, creating fences, and using her pylon to silence fights that get too loud. Nobody knows the arena better than Wattson – anyone who underestimates her is in for a shock.`,
+        tag_line: `Static Defender`,
+        img: `https://media.contentapi.ea.com/content/dam/apex-legends/images/2019/01/legends-character-tiles/apex-grid-tile-legends-wattson.png.adapt.crop16x9.1023w.png`
+    })
+    wattson.save();
 
+    const wraith = await new Legend({
+        name: `Wraith`,
+        description: `Wraith is a whirlwind fighter, able to execute deadly attacks and manipulate spacetime by opening rifts in the fabric of reality — but those abilities came at a price. Years ago, she woke up in an IMC detention facility with no memory of who she was. Senior Science Pilot Renee Blasey, who volunteered as guinea pig for her own experiments... whose partner betrayed her and locked her away… no longer existed. All that was left was a timid girl, frightened by a cacophony of voices in her head, until another version of herself appeared and taught her to listen to the voices. Following her lead, Wraith found the strength to break free from her prison and escape into a different reality - this reality.
+
+        Finally free, but still robbed of her memories, Wraith continues her quest to learn more about who she was before the experiments. With so many of the Apex Games held on old IMC bases, Wraith now competes so she can access the mysterious facilities and learn more about who she was. She remains a fixture of the Apex Games, and with every match she gets closer to the truth...`,
+        tag_line: `Interdimensional Skirmisher`,
+        img: `https://liquipedia.net/commons/images/0/0e/Wraith_apex.png`
+    })
 
 
 }

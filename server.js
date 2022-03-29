@@ -6,7 +6,8 @@ const bodyParser = require('body-parser')
 const PORT = process.env.PORT || 3001
 const db = require('./db')
 
-const { Legend, Ability } = require('.models')
+const { Legend } = require('./models')
+const { Ability } = require('./models')
 
 const app = express()
 

@@ -1,9 +1,9 @@
 const { model } = require('mongoose')
-const RideSchema = require('./ability')
-const ParkSchema = require('./legend')
+const AbilitySchema = require('./ability')
+const LegendSchema = require('./legend')
 
-const Ability = model('ability', RideSchema)
-const Legend = model('legend', ParkSchema)
+const Ability = model('ability', AbilitySchema)
+const Legend = model('legend', LegendSchema)
 
 module.exports = {
     Ability,

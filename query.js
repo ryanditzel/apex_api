@@ -1,5 +1,6 @@
-const db = require('../db')
-const { Legend, Ability } = require('..models')
+const db = require('./db')
+const { Legend } = require('./models')
+const { Ability } = require('./models')
 
 const findAllLegends = async () => {
     const legends = await Legend.find()

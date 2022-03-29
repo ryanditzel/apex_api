@@ -1,5 +1,5 @@
 const db = require('../db')
-const { Ability, Legend } = require('..models')
+const { Legend, Ability } = require('..models')
 const { path } = require('../models/legend')
 
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
@@ -309,17 +309,18 @@ const main = async () => {
         {   legend: wattson._id,
             tactical: `Perimeter Security`,
             passive: `Spark of Genius`,
-            ultimate: `	Interception Pylon`
+            ultimate: `Interception Pylon`
         },
         {   legend: wraith._id,
             tactical: `Into the Void`,
             passive: `Voices from the Void`,
-            ultimate: `	Dimensional Rift`
+            ultimate: `Dimensional Rift`
         }
     ]
 
         await Ability.insertMany(abilities)
         console.log(`Abilities created`)
+}
 
     const run = async () => {
         await main()
@@ -327,9 +328,3 @@ const main = async () => {
     }
     
     run()
-
-
-
-
-
-}

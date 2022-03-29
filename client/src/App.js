@@ -12,6 +12,7 @@ import LegendDetails from './pages/LegendDetails'
 const  App = () => {
 
   const [legends, setLegend] = useState('')
+  const [abilities, setAbilities] = useState('')
 
   const getLegends = async() => {
     const legendList = await axios.get('http://localhost:3001/api/legends')
@@ -19,9 +20,15 @@ const  App = () => {
     setLegend(legendList.data)
   }
 
+  const getAbilities = async() => {
+    const abilitiesList = await axios.get('http://localhost:3001/api/abilities')
+    console.log(abilitiesList)
+    setAbilities(abilitiesList.data)
+  }
 
   useEffect (() => {
     getLegends()
+    getAbilities()
   },[])
 
   return (

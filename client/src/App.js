@@ -11,7 +11,18 @@ import LegendDetails from './pages/LegendDetails'
 
 const  App = () => {
 
-  
+  const [legends, setLegend] = useState('')
+
+  const getLegends = async() => {
+    const legendList = await axios.get('http://localhost:3001/api/legends')
+    console.log(legendList)
+    setLegend(legendList.data)
+  }
+
+
+  useEffect (() => {
+    getLegends()
+  },[])
 
   return (
     <div className="App">
@@ -20,11 +31,11 @@ const  App = () => {
       </header>
       <main>
         <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='legends' element={<Legends />} />
+          <Route path='/' element={<Home legends={legends} />} />
+          <Route path='legends' element={<Legends legends={legends} />} />
           <Route path='about' element={<About />} />
           <Route path='search' element={<Search />} />
-          <Route path='legends/:id' element={<LegendDetails />} />
+          <Route path='legends/:id' element={<LegendDetails legends={legends} />} />
         </Routes>
       </main>
     </div>

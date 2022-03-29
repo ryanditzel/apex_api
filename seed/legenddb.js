@@ -1,6 +1,6 @@
 const db = require('../db')
 const { Legend, Ability } = require('../models')
-// const { path } = require('../models/legend')
+
 
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 
@@ -165,108 +165,108 @@ const main = async () => {
     })
     wraith.save();
 
-    // const abilities = [
-    //     {   legend: ash._id,
-    //         tactical: `Arc Snare`,
-    //         passive: `Marked For Death`,
-    //         ultimate: `Phase Breach`
-    //     },
-    //     {   legend: bangalore._id,
-    //         tactical: `Smoke Launcher`,
-    //         passive: `Double Time`,
-    //         ultimate: `Rolling Thunder.`
-    //     },
-    //     {   legend: bloodhound._id,
-    //         tactical: `Eye of the Allfather`,
-    //         passive: `Tracker`,
-    //         ultimate: `Beast of the Hunt`
-    //     },
-    //     {   legend: caustic._id,
-    //         tactical: `Nox Gas Trap`,
-    //         passive: `Nox Vision`,
-    //         ultimate: `Nox Gas Grenade`
-    //     },
-    //     {   legend: crypto._id,
-    //         tactical: `Surveillance Drone`,
-    //         passive: `Neurolink`,
-    //         ultimate: `Drone EMP`
-    //     },
-    //     {   legend: fuse._id,
-    //         tactical: `Knuckle Cluster`,
-    //         passive: `Grenadier`,
-    //         ultimate: `The Motherlode`
-    //     },
-    //     {   legend: gibraltar._id,
-    //         tactical: `Dome of Protection`,
-    //         passive: `Gun Shield`,
-    //         ultimate: `Defensive Bombardment`
-    //     },
-    //     {   legend: horizon._id,
-    //         tactical: `Gravity Lift`,
-    //         passive: `Spacewalk`,
-    //         ultimate: `Black Hole`
-    //     },
-    //     {   legend: lifeline._id,
-    //         tactical: `D.O.C. Heal Drone`,
-    //         passive: `Combat Medic`,
-    //         ultimate: `Care Package`
-    //     },
-    //     {   legend: loba._id,
-    //         tactical: `Burglar’s Best Friend`,
-    //         passive: `Eye for Quality`,
-    //         ultimate: `Black Market Boutique`
-    //     },
-    //     {   legend: mad_maggie._id,
-    //         tactical: `Riot Drill`,
-    //         passive: `Warlord's Ire`,
-    //         ultimate: `Wrecking Ball`
-    //     },
-    //     {   legend: mirage._id,
-    //         tactical: `Psyche Out`,
-    //         passive: `Now You See Me . . .`,
-    //         ultimate: `	Life of the Party`
-    //     },
-    //     {   legend: octane._id,
-    //         tactical: `Stim`,
-    //         passive: `Swift Mend`,
-    //         ultimate: `Launch Pad`
-    //     },
-    //     {   legend: pathfinder._id,
-    //         tactical: `Grappling Hook`,
-    //         passive: `Insider Knowledge`,
-    //         ultimate: `Zipline Gun`
-    //     },
-    //     {   legend: rampart._id,
-    //         tactical: `Amped Cover`,
-    //         passive: `Modded Loader`,
-    //         ultimate: `Emplaced Minigun “Sheila”`
-    //     },
-    //     {   legend: revenant._id,
-    //         tactical: `Silence`,
-    //         passive: `Stalker`,
-    //         ultimate: `Death Totem`
-    //     },
-    //     {   legend: seer._id,
-    //         tactical: `Focus of Attention`,
-    //         passive: `Heart Seeker`,
-    //         ultimate: `Exhibit`
-    //     },
-    //     {   legend: valkyrie._id,
-    //         tactical: `Missile Swarm`,
-    //         passive: `VTOL Jets`,
-    //         ultimate: `Skyward Dive`
-    //     },
-    //     {   legend: wattson._id,
-    //         tactical: `Perimeter Security`,
-    //         passive: `Spark of Genius`,
-    //         ultimate: `Interception Pylon`
-    //     },
-    //     {   legend: wraith._id,
-    //         tactical: `Into the Void`,
-    //         passive: `Voices from the Void`,
-    //         ultimate: `Dimensional Rift`
-    //     }
-    // ]
+    const abilities = [
+        {   legend_id: ash._id,
+            tactical: `Arc Snare`,
+            passive: `Marked For Death`,
+            ultimate: `Phase Breach`
+        },
+        {   legend_id: bangalore._id,
+            tactical: `Smoke Launcher`,
+            passive: `Double Time`,
+            ultimate: `Rolling Thunder.`
+        },
+        {   legend_id: bloodhound._id,
+            tactical: `Eye of the Allfather`,
+            passive: `Tracker`,
+            ultimate: `Beast of the Hunt`
+        },
+        {   legend_id: caustic._id,
+            tactical: `Nox Gas Trap`,
+            passive: `Nox Vision`,
+            ultimate: `Nox Gas Grenade`
+        },
+        {   legend_id: crypto._id,
+            tactical: `Surveillance Drone`,
+            passive: `Neurolink`,
+            ultimate: `Drone EMP`
+        },
+        {   legend_id: fuse._id,
+            tactical: `Knuckle Cluster`,
+            passive: `Grenadier`,
+            ultimate: `The Motherlode`
+        },
+        {   legend_id: gibraltar._id,
+            tactical: `Dome of Protection`,
+            passive: `Gun Shield`,
+            ultimate: `Defensive Bombardment`
+        },
+        {   legend_id: horizon._id,
+            tactical: `Gravity Lift`,
+            passive: `Spacewalk`,
+            ultimate: `Black Hole`
+        },
+        {   legend_id: lifeline._id,
+            tactical: `D.O.C. Heal Drone`,
+            passive: `Combat Medic`,
+            ultimate: `Care Package`
+        },
+        {   legend_id: loba._id,
+            tactical: `Burglar’s Best Friend`,
+            passive: `Eye for Quality`,
+            ultimate: `Black Market Boutique`
+        },
+        {   legend_id: mad_maggie._id,
+            tactical: `Riot Drill`,
+            passive: `Warlord's Ire`,
+            ultimate: `Wrecking Ball`
+        },
+        {   legend_id: mirage._id,
+            tactical: `Psyche Out`,
+            passive: `Now You See Me . . .`,
+            ultimate: `	Life of the Party`
+        },
+        {   legend_id: octane._id,
+            tactical: `Stim`,
+            passive: `Swift Mend`,
+            ultimate: `Launch Pad`
+        },
+        {   legend_id: pathfinder._id,
+            tactical: `Grappling Hook`,
+            passive: `Insider Knowledge`,
+            ultimate: `Zipline Gun`
+        },
+        {   legend_id: rampart._id,
+            tactical: `Amped Cover`,
+            passive: `Modded Loader`,
+            ultimate: `Emplaced Minigun “Sheila”`
+        },
+        {   legend_id: revenant._id,
+            tactical: `Silence`,
+            passive: `Stalker`,
+            ultimate: `Death Totem`
+        },
+        {   legend_id: seer._id,
+            tactical: `Focus of Attention`,
+            passive: `Heart Seeker`,
+            ultimate: `Exhibit`
+        },
+        {   legend_id: valkyrie._id,
+            tactical: `Missile Swarm`,
+            passive: `VTOL Jets`,
+            ultimate: `Skyward Dive`
+        },
+        {   legend_id: wattson._id,
+            tactical: `Perimeter Security`,
+            passive: `Spark of Genius`,
+            ultimate: `Interception Pylon`
+        },
+        {   legend_id: wraith._id,
+            tactical: `Into the Void`,
+            passive: `Voices from the Void`,
+            ultimate: `Dimensional Rift`
+        }
+    ]
     
         await Ability.insertMany(abilities)
         console.log(`Abilities created`)

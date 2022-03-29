@@ -1,23 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import './styles/App.css';
+import axios from 'axios'
+import React, { useEffect, useState } from 'react'
+import { Routes, Route } from 'react-router-dom'
+import Navbar from './components/Navbar'
+import Home from './pages/Home'
+import About from './pages/About'
+import Legends from './pages/Legends'
+import Search from './components/Search'
+import LegendDetails from './pages/LegendDetails'
 
-function App() {
+const  App = () => {
+
+  
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header className="Navbar">
+       <Navbar />
       </header>
+      <main>
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='legends' element={<Legends />} />
+          <Route path='about' element={<About />} />
+          <Route path='search' element={<Search />} />
+          <Route path='legends/:id' element={<LegendDetails />} />
+        </Routes>
+      </main>
     </div>
   );
 }

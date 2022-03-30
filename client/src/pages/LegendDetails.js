@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import { useParams } from 'react-router-dom'
+import Search from '../components/Search'
 
 const LegendDetails = (props) => {
 
@@ -25,27 +26,27 @@ const LegendDetails = (props) => {
         setAbilities(selectedAbilities)
     }, [props.legends, props.abilities, id])
     
-    
-    
     if(selectedLegend) {
     
     return (
-        <div className='legend-details'>
-            <img src={selectedLegend.img} alt='legend poster'/>
-            <h1>{selectedLegend.name}</h1>
-            <h2>{selectedLegend.tag_line}</h2>
-            <p>{selectedLegend.description}</p>
-                <div className='ability-details'>
-                    {selectedAbilities.map((ability) =>
-                    <div key={ability._id}>
-                        <ol>
-                            <li>Tacical Ability: {ability.tactical}</li>
-                            <li>Passive Ability: {ability.passive}</li>
-                            <li>Ultimate Ability: {ability.ultimate}</li>
-                        </ol>
+        <div>
+            <div className='legend-details'>
+                <img src={selectedLegend.img} alt='legend poster'/>
+                <h1>{selectedLegend.name}</h1>
+                <h2>{selectedLegend.tag_line}</h2>
+                <p>{selectedLegend.description}</p>
+                    <div className='ability-details'>
+                        {selectedAbilities.map((ability) =>
+                        <div key={ability._id}>
+                            <ol>
+                                <li>Tacical Ability: {ability.tactical}</li>
+                                <li>Passive Ability: {ability.passive}</li>
+                                <li>Ultimate Ability: {ability.ultimate}</li>
+                            </ol>
+                        </div>
+                        )}
                     </div>
-                    )}
-                </div>
+            </div>
         </div>
     )
 }
@@ -53,7 +54,7 @@ const LegendDetails = (props) => {
     else {
         return (
         <div className='loading-content-wrapper'>
-            Loading...
+            Error, please refresh page.
         </div>
         )
     }}

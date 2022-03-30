@@ -35,7 +35,9 @@ const Home = (props) => {
     return (
         <div className='home'>
             <h1>Apex Legends Database</h1>
+            <div className='search-bar'>
             <Search onSubmit={searchOnSubmit} onChange={searchOnChange} value={searchQuery}/>
+            </div>
             <section className='search-results container-grid'>
                 <h5>Showing Results for: {searchQuery}</h5>
                 {searchResults.map((result) => {

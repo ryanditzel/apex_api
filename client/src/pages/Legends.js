@@ -10,13 +10,13 @@ const Legends = (props) => {
 
     return (
       <div className="legend-grid">
-        {/* {
-        props.legends.map((park) => (
+        {
+        props.legends.map((legend) => (
           <div className="legend-card" onClick={() => showLegends(legend)} key={legend._id}>
             <h3>{legend.name}</h3>
             <img style={{ display: 'block' }} src={legend.img} alt={legend.name} />
           </div>
-        ))}  */}
+        ))} 
       </div>
     )
   }

@@ -11,8 +11,8 @@ import LegendDetails from './pages/LegendDetails'
 
 const  App = () => {
 
-  const [legends, setLegend] = useState('')
-  const [abilities, setAbilities] = useState('')
+  const [legends, setLegend] = useState([])
+  const [abilities, setAbilities] = useState([])
 
   const getLegends = async() => {
     const legendList = await axios.get('http://localhost:3001/api/legends')
@@ -42,7 +42,7 @@ const  App = () => {
           <Route path='legends' element={<Legends legends={legends} />} />
           <Route path='about' element={<About />} />
           <Route path='search' element={<Search />} />
-          <Route path='legends/:id' element={<LegendDetails legends={legends} />} />
+          <Route path='legends/:id' element={<LegendDetails legends={legends} abilities={abilities}/>} />
         </Routes>
       </main>
     </div>

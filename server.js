@@ -65,17 +65,17 @@ app.get('/api/abilities/:id', async (req, res) => {
     }
 })
 
-app.post('/api/legends/add-new', async (req, res) => {
-    try {
-        const legend = await new Legend(req.body);
-        await legend.save();
-        return res.status(201).json({
-          legend,
-        });
-      } catch (error) {
-          return res.status(500).json({ error: error.message })
-      }
-})
+// app.post('/api/legends/add-new', async (req, res) => {
+//     try {
+//         const legend = await new Legend(req.body);
+//         await legend.save();
+//         return res.status(201).json({
+//           legend,
+//         });
+//       } catch (error) {
+//           return res.status(500).json({ error: error.message })
+//       }
+// })
 
 app.post('/api/abilities/add-new', async (req, res) => {
     try {

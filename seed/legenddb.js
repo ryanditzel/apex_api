@@ -177,7 +177,7 @@ const main = async () => {
         {   legend_id: bangalore._id,
             tactical: `Smoke Launcher`,
             passive: `Double Time`,
-            ultimate: `Rolling Thunder.`
+            ultimate: `Rolling Thunder`
         },
         {   legend_id: bloodhound._id,
             tactical: `Eye of the Allfather`,

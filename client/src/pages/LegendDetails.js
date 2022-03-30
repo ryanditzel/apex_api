@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import { useParams } from 'react-router-dom'
+import AbilityForm from '../components/AbilityForm'
 
 const LegendDetails = (props) => {
 
@@ -44,6 +45,9 @@ const LegendDetails = (props) => {
                             </ol>
                         </div>
                         )}
+                        <div className='ability-form'>
+                            <AbilityForm/>
+                        </div>
                     </div>
             </div>
         </div>

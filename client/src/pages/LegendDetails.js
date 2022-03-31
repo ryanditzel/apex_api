@@ -26,6 +26,7 @@ const LegendDetails = (props) => {
         setAbilities(selectedAbilities)
     }, [props.legends, props.abilities, id])
     
+    
     if(selectedLegend) {
     
     return (

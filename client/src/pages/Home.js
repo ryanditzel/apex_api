@@ -39,7 +39,6 @@ const Home = (props) => {
             <Search onSubmit={searchOnSubmit} onChange={searchOnChange} value={searchQuery}/>
             </div>
             <section className='search-results container-grid'>
-                <h5>Showing Results for: {searchQuery}</h5>
                 {searchResults.map((result) => {
                 return <LegendCard key={result._id} onClick={() => showLegends(result)} image={result.img} name={result.name} />
                 })}

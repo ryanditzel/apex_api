@@ -29,16 +29,6 @@ const LegendDetails = (props) => {
         setAbilities(selectedAbilities)
     }, [props.legends, props.abilities, id])
     
-    const onDelete = (abilityId) => {
-        const url = `http://localhost:3001/api/legend/${id}/abilities/${abilityId}`
-        Axios.delete(url).then((response) => {
-            console.log(`Success`, response)
-            // window.location.reload()
-        }).catch(() => {
-            console.log('Error')
-        })
-    }
-    
     if(selectedLegend) {
     
     return (
@@ -50,16 +40,10 @@ const LegendDetails = (props) => {
                 <p>{selectedLegend.description}</p>
                     <div className='ability-details'>
                         {selectedAbilities.map((ability) =>
-                        <div key={ability._id}>
-                            <button onClick={() => {onDelete(ability._id)}} >x</button>
-                            <ul>
-                                <li>Tacical Ability: {ability.tactical}</li>
-                                <li>Passive Ability: {ability.passive}</li>
-                                <li>Ultimate Ability: {ability.ultimate}</li>
-                            </ul>
-                        </div>
+                            <AbilityForm legendId={id} key={ability._id} ability={ability} />
                         )}
                         <div className='ability-form'>
+                            <h3>Add A New Ability</h3>
                             <AbilityForm legendId={id}/>
                         </div>
                     </div>

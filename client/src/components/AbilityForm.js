@@ -3,43 +3,83 @@ import { useState } from 'react'
 import Axios from 'axios'
 
 const AbilityForm = (props) => {
-  
-    const [data, setData] = useState({
-        tactical: '',
-        passive: '',
-        ultimate: '',
-   })
-    function submit (e) {
-      const url = `http://localhost:3001/api/legend/${props.legendId}/abilities/`
-      e.preventDefault()
-      Axios.post(url, {
-        tactical: data.tactical,
-        passive: data.passive,
-        ultimate: data.ultimate,
-      })
-      .then(res => {
-          console.log(res.data)
-      })
-      .catch((e) => {
-        console.error('Create Ability Failed', e.message)
-      })
+
+  const [isEdit, setEdit] = useState(!props.ability)
+  const [data, setData] = useState(props.ability || {
+      tactical: '',
+      passive: '',
+      ultimate: '',
+  })
+
+  function submit (e) {
+    let url = `http://localhost:3001/api/legend/${props.legendId}/abilities/`
+    if (data._id) {
+      url += data._id
     }
-        function onChange(e) {
-          const newdata = { ...data }
-          newdata[e.target.name] = e.target.value
-          setData(newdata)
-          console.log(newdata)
-        }
+    e.preventDefault()
+    const method = data._id ? Axios.put : Axios.post
+    method(url, {
+      tactical: data.tactical,
+      passive: data.passive,
+      ultimate: data.ultimate,
+    })
+    .then(res => {
+        console.log(res.data)
+        window.location.reload()
+    })
+    .catch((e) => {
+      console.error(`${isEdit ? `Update` : `Create`} Ability Failed`, e.message)
+    })
+  }
+  function onChange(e) {
+    const newdata = { ...data }
+    newdata[e.target.name] = e.target.value
+    setData(newdata)
+    console.log(newdata)
+  }
+
+  const onDelete = () => {
+    const url = `http://localhost:3001/api/legend/${props.legendId}/abilities/${data._id}`
+    Axios.delete(url).then((response) => {
+        console.log(`Success`, response)
+        window.location.reload()
+    }).catch(() => {
+        console.log('Error')
+    })
+}
+
+  const ValueField = ({ name, value }) => {
+    if (!isEdit) {
+      return value;
+    }
+    return (
+      <input
+        type="textarea"
+        name={name}
+        placeholder={name}
+        onChange={onChange}
+        value={value}
+      />
+    );
+  };
 
   return (
     <div>
-    <h3>Add A New Ability</h3>
-    <form onSubmit={ submit }>
-      <input type="text area" name={'tactical'} placeholder={'Tactical'} onChange={(e) => onChange(e)}/>
-      <input type="text area" name={'passive'} placeholder={'Passive'} onChange={(e) => onChange(e)}/>
-      <input type="text area" name={'ultimate'} placeholder={'Ultimate'} onChange={(e) => onChange(e)}/>
-      <button>Submit</button>
-    </form>
+      {!isEdit && <button onClick={() => {onDelete()}} >x</button>}
+      {!isEdit && <button onClick={() => {setEdit(true)}} >Edit</button>}
+      <form onSubmit={ submit }>
+        <div>
+          
+
+          <ul>
+              <li>Tactical Ability: <ValueField name={'tactical'} value={data.tactical}/></li>
+              <li>Passive Ability: <ValueField name={'passive'} value={data.passive}/></li>
+              <li>Ultimate Ability: <ValueField name={'ultimate'} value={data.ultimate}/></li>
+          </ul>
+        </div>
+        {isEdit && <button type='submit'>Submit</button> }
+        {isEdit && <button onClick={() => {setEdit(false)}}>Cancel</button> }
+      </form>
     </div>
   );
 }

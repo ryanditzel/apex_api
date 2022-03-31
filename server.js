@@ -15,6 +15,8 @@ app.use(cors())
 app.use(express.json())
 app.use(logger('dev'))
 
+app.use(express.static(`${__dirname}/client/build`))
+
 app.get('/', (req, res) => {
     res.send('This is root!')
 })
@@ -84,6 +86,10 @@ app.post('/api/abilities/add-new', async (req, res) => {
           return res.status(500).json({ error: error.message })
       }
 })
+
+app.get('/*', (req, res) => {
+    res.sendFile(`${__dirname}/client/build/index.html`)
+   })
 
 app.listen(PORT, () => {
     console.log(`Express server listening on port ${PORT}`)

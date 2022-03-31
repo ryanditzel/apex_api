@@ -67,7 +67,7 @@ app.get('/api/abilities/:id', async (req, res) => {
     }
 })
 
-app.delete('/api/abilities/delete', async (req, res) => {
+app.delete('/api/abilities/:id', async (req, res) => {
     try {
     const deleteAbility = await Ability.findByIdAndDelete(req.params.id)
     } catch (e) {
@@ -75,13 +75,17 @@ app.delete('/api/abilities/delete', async (req, res) => {
     }
 })
 
-app.post('/api/abilities/add-new', async (req, res) => {
+app.post('/api/legend/:id/abilities/', async (req, res) => {
     try {
-        const ability = await new Ability(req.body);
+        const { params: { id }, body } = req;
+        console.log('Data', id, body)
+        const abilityData = {
+            ...body, 
+            legend_id:id
+        }
+        const ability = await new Ability(abilityData);
         await ability.save();
-        return res.status(201).json({
-          ability,
-        });
+        return res.status(200);
       } catch (error) {
           return res.status(500).json({ error: error.message })
       }

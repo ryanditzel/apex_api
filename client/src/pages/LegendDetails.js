@@ -47,7 +47,7 @@ const LegendDetails = (props) => {
                         </div>
                         )}
                         <div className='ability-form'>
-                            <AbilityForm/>
+                            <AbilityForm legendId={id}/>
                         </div>
                     </div>
             </div>

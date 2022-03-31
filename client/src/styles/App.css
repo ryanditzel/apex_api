@@ -1,8 +1,8 @@
 body {
-  /* background-image: url("https://w.wallhaven.cc/full/2e/wallhaven-2ez1em.jpg"); */
+  background-image: url("../images/bg-red.jpeg");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: top;
+  background-position: center;
 }
 
 header {
@@ -24,7 +24,7 @@ header {
   margin: auto;
   width: 50%;
   padding: 10px;
-  background-color: rgba(0, 0, 0, .8);
+  background-color: rgba(0, 0, 0, 0);
 }
 
 /* SEARCH BAR */

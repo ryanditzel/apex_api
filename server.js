@@ -18,7 +18,7 @@ app.use(logger('dev'))
 app.use(express.static(`${__dirname}/client/build`))
 
 app.get('/', (req, res) => {
-    res.send('This is root!')
+    res.send('This is pain')
 })
 
 //code here
@@ -67,25 +67,28 @@ app.get('/api/abilities/:id', async (req, res) => {
     }
 })
 
-app.delete('/api/abilities/:id', async (req, res) => {
+app.delete('/api/legend/:legendId/abilities/:abilityId', async (req, res) => {
     try {
-    const deleteAbility = await Ability.findByIdAndDelete(req.params.id)
+        const { params: { legendId, abilityId } } = req;
+        await Ability.findByIdAndDelete(abilityId)
+        const currentAbilities = await Ability.find({legend_id:legendId})
+        return res.status(200).json({abilities:currentAbilities});
     } catch (e) {
         return res.status(500).json({ error: error.message })
     }
 })
 
-app.post('/api/legend/:id/abilities/', async (req, res) => {
+app.post('/api/legend/:legendId/abilities/', async (req, res) => {
     try {
-        const { params: { id }, body } = req;
-        console.log('Data', id, body)
+        const { params: { legendId }, body } = req;
+        console.log('Data', legendId, body)
         const abilityData = {
             ...body, 
-            legend_id:id
+            legend_id:legendId
         }
         const ability = await new Ability(abilityData);
         await ability.save();
-        return res.status(200);
+        return res.status(200).send('Success');
       } catch (error) {
           return res.status(500).json({ error: error.message })
       }

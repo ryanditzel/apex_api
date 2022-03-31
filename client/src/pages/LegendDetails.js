@@ -1,6 +1,9 @@
 import React, {useEffect, useState} from 'react'
 import { useParams } from 'react-router-dom'
 import AbilityForm from '../components/AbilityForm'
+import Axios from 'axios'
+
+
 
 const LegendDetails = (props) => {
 
@@ -26,6 +29,15 @@ const LegendDetails = (props) => {
         setAbilities(selectedAbilities)
     }, [props.legends, props.abilities, id])
     
+    const onDelete = (abilityId) => {
+        const url = `http://localhost:3001/api/legend/${id}/abilities/${abilityId}`
+        Axios.delete(url).then((response) => {
+            console.log(`Success`, response)
+            // window.location.reload()
+        }).catch(() => {
+            console.log('Error')
+        })
+    }
     
     if(selectedLegend) {
     
@@ -39,11 +51,12 @@ const LegendDetails = (props) => {
                     <div className='ability-details'>
                         {selectedAbilities.map((ability) =>
                         <div key={ability._id}>
-                            <ol>
+                            <button onClick={() => {onDelete(ability._id)}} >x</button>
+                            <ul>
                                 <li>Tacical Ability: {ability.tactical}</li>
                                 <li>Passive Ability: {ability.passive}</li>
                                 <li>Ultimate Ability: {ability.ultimate}</li>
-                            </ol>
+                            </ul>
                         </div>
                         )}
                         <div className='ability-form'>

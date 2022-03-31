@@ -1,10 +1,8 @@
 import React from 'react'
-import { useNavigate } from 'react-router-dom'
 import { useState } from 'react'
 import Axios from 'axios'
 
 const AbilityForm = (props) => {
-  let navigate = useNavigate()
   
     const [data, setData] = useState({
         tactical: '',

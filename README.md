@@ -33,3 +33,6 @@ https://lucid.app/lucidchart/ae3d7ea9-6736-4440-80e1-0564d31044a3/edit?invitatio
 https://github.com/ryanditzel/apex_api
 ### Figma Wireframe:
 https://www.figma.com/file/2Yv97b7R8LRRVgHzUa6wT2/Untitled?node-id=0%3A1
+
+## Credits:
+Search Bar: https://codepen.io/sebastianpopp/pen/myYmmy

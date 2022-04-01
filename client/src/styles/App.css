@@ -37,12 +37,13 @@ li {
 /* SEARCH BAR */
 input {
   font-family: 'Source Sans Pro', sans-serif;
-  background-color: #ece8e1c9 !important;
+  background-color: #ece8e1 !important;
   border: none;
   border-radius: 2px 0 0 2px;
-  padding:24px;
+  padding:20px;
   font-size: 12px;
   width: 40vw;
+  margin: 5px;
 }
 /* SEARCH BAR END */
 

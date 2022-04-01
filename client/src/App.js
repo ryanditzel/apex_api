@@ -13,6 +13,11 @@ import AbilityForm from './components/AbilityForm'
 
 const  App = () => {
 
+  const BASE_URL =
+  process.env.NODE_ENV === 'production'
+    ? `${window.location.origin}/api`
+    : 'http://localhost:3001/api';
+
   const [legends, setLegend] = useState([])
   const [abilities, setAbilities] = useState([])
   const [newAbility, setNewAbility] = useState({
@@ -23,13 +28,13 @@ const  App = () => {
   })
 
   const getLegends = async() => {
-    const legendList = await axios.get('http://localhost:3001/api/legends')
+    const legendList = await axios.get(`${BASE_URL}/legends`)
     console.log(legendList)
     setLegend(legendList.data)
   }
 
   const getAbilities = async() => {
-    const abilitiesList = await axios.get('http://localhost:3001/api/abilities')
+    const abilitiesList = await axios.get(`${BASE_URL}/abilities`)
     console.log(abilitiesList)
     setAbilities(abilitiesList.data)
   }

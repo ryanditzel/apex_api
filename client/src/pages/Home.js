@@ -43,6 +43,7 @@ const Home = (props) => {
                 return <LegendCard key={result._id} onClick={() => showLegends(result)} image={result.img} name={result.name} />
                 })}
             </section>
+            
         </div>
     )
 }

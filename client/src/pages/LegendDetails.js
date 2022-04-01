@@ -33,12 +33,12 @@ const LegendDetails = (props) => {
             <div className='legend-details'>
                 <img src={selectedLegend.img} alt='legend poster'/>
                 <h1>{selectedLegend.name}</h1>
-                <h2>{selectedLegend.tag_line}</h2>
+                <h3>{selectedLegend.tag_line}</h3>
                 <p>{selectedLegend.description}</p>
                     <div className='ability-details'>
-                        {selectedAbilities.map((ability) =>
+                       <h3>{selectedAbilities.map((ability) =>
                             <AbilityForm legendId={id} key={ability._id} ability={ability} />
-                        )}
+                        )}</h3> 
                         <div className='ability-form'>
                             <h3>Add A New Ability</h3>
                             <AbilityForm legendId={id}/>

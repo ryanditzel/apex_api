@@ -65,20 +65,18 @@ const AbilityForm = (props) => {
 
   return (
     <div>
-      {!isEdit && <button onClick={() => {onDelete()}} >x</button>}
-      {!isEdit && <button onClick={() => {setEdit(true)}} >Edit</button>}
+      {!isEdit && <button className='legend-close-button' onClick={() => {onDelete()}} >x</button>}
+      {!isEdit && <button className='legend-edit-button' onClick={() => {setEdit(true)}} >Edit</button>}
       <form onSubmit={ submit }>
         <div>
-          
-
           <ul>
               <li>Tactical Ability: <ValueField name={'tactical'} value={data.tactical}/></li>
               <li>Passive Ability: <ValueField name={'passive'} value={data.passive}/></li>
               <li>Ultimate Ability: <ValueField name={'ultimate'} value={data.ultimate}/></li>
           </ul>
         </div>
-        {isEdit && <button type='submit'>Submit</button> }
-        {isEdit && <button onClick={() => {setEdit(false)}}>Cancel</button> }
+        {isEdit && <button className='submit-legend-button' type='submit'>Submit</button> }
+        {isEdit && <button className='legend-cancel-button' onClick={() => {setEdit(false)}}>Cancel</button> }
       </form>
     </div>
   );

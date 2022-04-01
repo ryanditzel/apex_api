@@ -4,17 +4,18 @@ const Search = (props) => {
 
     return(
     <div className='search-bar'>
-        <div class="cntr">
-            <div className='cntr-innr'>
-            <label className="search" for="inpt_search">
-                <input id="inpt_search" type="text" name='search' value={props.value} placeholder='' onChange={props.onChange}/>
-            </label>
+        <input id="inpt_search" type="text" name='search' value={props.value} placeholder='Search Legend Name...' onChange={props.onChange}/>
             <p>
-            <button onClick={props.onSubmit}>Submit</button>
+                <div id="container">
+                    <button className="learn-more" onClick={props.onSubmit}>
+                        <span className="circle" aria-hidden="true">
+                        <span className="icon arrow"></span>
+                        </span>
+                        <span class="button-text">Submit</span>
+                    </button>
+                </div>
             </p>
-            </div>
-        </div>
-     </div>
+    </div>
     )
 }
 

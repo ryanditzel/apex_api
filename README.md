@@ -36,3 +36,4 @@ https://www.figma.com/file/2Yv97b7R8LRRVgHzUa6wT2/Untitled?node-id=0%3A1
 
 ## Credits:
 Search Bar: https://codepen.io/sebastianpopp/pen/myYmmy
+Search Button: https://codepen.io/liamj/pen/vYYLGZj

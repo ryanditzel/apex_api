@@ -1,9 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import { useParams } from 'react-router-dom'
 import AbilityForm from '../components/AbilityForm'
-import Axios from 'axios'
-
-
 
 const LegendDetails = (props) => {
 

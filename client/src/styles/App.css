@@ -1,4 +1,5 @@
 body {
+  font-family: 'Source Sans Pro', sans-serif;
   background-image: url("../images/bg-red.jpeg");
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -8,9 +9,11 @@ body {
 
 li {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
-header {
+.Navbar {
   color: #ffff;
   position: relative;
 }
@@ -20,8 +23,7 @@ header {
 }
 
 .Navbar {
-  font-size:xx-large;
-  color: white;
+  font-size:large;
   position: relative;
 }
 
@@ -33,60 +35,103 @@ header {
 }
 
 /* SEARCH BAR */
-.cntr {
-  display: table;
-  width: 100%;
-  height: 100%;
-}
-.cntr .cntr-innr {
-  display: table-cell;
-  text-align: center;
-  vertical-align: middle;
-}
-
-.search {
-  display: inline-block;
-  position: relative;
-  height: 35px;
-  width: 35px;
-  box-sizing: border-box;
-  margin: 0px 8px 7px 0px;
-  padding: 7px 9px 0px 9px;
-  border: 3px solid #FFFFFF;
-  border-radius: 25px;
-  transition: all 200ms ease;
-  cursor: text;
-}
-.search:after {
-  content: "";
-  position: absolute;
-  width: 3px;
-  height: 20px;
-  right: -5px;
-  top: 21px;
-  background: #FFFFFF;
-  border-radius: 3px;
-  transform: rotate(-45deg);
-  transition: all 200ms ease;
-}
-.search.active,
-.search:hover {
-  width: 200px;
-  margin-right: 0px;
-}
-.search.active:after,
-.search:hover:after {
-  height: 0px;
-}
-.search input {
-  width: 100%;
+input {
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: #ece8e1c9 !important;
   border: none;
-  box-sizing: border-box;
-  font-family: Helvetica;
-  font-size: 15px;
-  color: inherit;
-  background: transparent;
-  outline-width: 0px;
+  border-radius: 2px 0 0 2px;
+  padding:24px;
+  font-size: 12px;
+  width: 40vw;
 }
 /* SEARCH BAR END */
 
+
+/* BUTTONS */
+@import url("https://fonts.googleapis.com/css?family=Mukta:700");
+* {
+  box-sizing: border-box;
+}
+*::before, *::after {
+  box-sizing: border-box;
+}
+
+button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 5;
+  font-size: inherit;
+  font-family: inherit;
+}
+button.learn-more {
+  width: 12rem;
+  height: auto;
+}
+button.learn-more .circle {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 3rem;
+  height: 3rem;
+  background: #282936;
+  border-radius: 1.625rem;
+}
+button.learn-more .circle .icon {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #ffffff;
+}
+button.learn-more .circle .icon.arrow {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  left: 0.625rem;
+  width: 1.125rem;
+  height: 0.125rem;
+  background: none;
+}
+button.learn-more .circle .icon.arrow::before {
+  position: absolute;
+  content: "";
+  top: -0.25rem;
+  right: 0.0625rem;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-top: 0.125rem solid #fff;
+  border-right: 0.125rem solid #fff;
+  transform: rotate(45deg);
+}
+button.learn-more .button-text {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.75rem 0;
+  margin: 0 0 0 1.85rem;
+  color: #ffffff;
+  font-weight: 700;
+  line-height: 1.6;
+  text-align: center;
+  text-transform: uppercase;
+}
+button:hover .circle {
+  width: 100%;
+}
+button:hover .circle .icon.arrow {
+  background: #fff;
+  transform: translate(1rem, 0);
+}
+button:hover .button-text {
+  color: #fff;
+}
+/* END BUTTON */

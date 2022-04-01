@@ -20,7 +20,7 @@ const main = async () => {
         name: "Bangalore",
         description: "Born into a military family where she, her parents, and her four older brothers all served with the IMC, Bangalore has been an exceptional soldier her whole life. Dedicated to the IMC cause, she was top of her class at the IMC Military Academy and the only cadet who could take apart a Peacekeeper, equip it with a Precision Choke hop-up, and put it back together in under twenty seconds – blindfolded. In the months following the Battle at Gridiron, the IMS Hestia, with Anita and brother Jackson on board, was attacked by unknown assailants. A bomb on the outer hull blew out a chunk of the ship… but not before Jackson shielded her, sacrificing his own life to save hers. Anita watched helplessly, as Jackson was sucked out into the vacuum of space. After crashing on a Syndicate planet, Anita looked for both work, and the brother she refused to believe had died, so they could begin the decades-long trip back home. Now, she fights to raise money in the Apex Games, in the hopes of finding a pilot willing to take the epic trip back home to reunite with what remains of her family.",
         tag_line: "Professional Soldier",
-        img: "https://image.pngaaa.com/376/1988376-middle.png"
+        img: "https://lh3.googleusercontent.com/PsWbRJSRiIjLb9UE6sLjA71YPHq7GewjxOXn51o9ZxprkSBFBbcvEAxWp_lW1L9ws7t3_EasOKjnuvpzkkVne7SNv5J-rCNjvr5EX-X6f-kbrCWA0c-TtNWEo1eClTjYlsNuOrc5phw=w2400"
     })
     await bangalore.save();
 
@@ -36,7 +36,7 @@ const main = async () => {
         name: "Caustic",
         description: "Alexander Nox used to be one of the brightest scientists in the employ of Humbert Labs, the Frontier’s leading manufacturer of pesticide gases. Nox worked day and night developing new formulas for the glut of pesticides needed to protect the crops that sustained the Outlands. But he soon realized that progress was being hampered by his testing methods. He needed to test on more than just inert tissue: he needed living subjects. As he toiled in secret, Nox began to see the beauty in his creations and their ability to destroy anything they touched. But the head of Humbert Labs soon discovered his gruesome experiments, and their confrontation ended with the lab in flames. Now, competing under the name Caustic, he puts his gaseous creations to work in the Apex Games and observes their effects with great interest.",
         tag_line: "Toxic Trapper",
-        img: "https://www.pngfind.com/pngs/m/253-2534460_we-are-here-to-give-best-tips-for.png"
+        img: "https://lh3.googleusercontent.com/Wxx78rOuHRqfqyf_IDxAGkFVNZNO-gvPZgVszfhbgPqzlUQeTKjUo3z8AQkHr8mBB00qpI4lt3VoXUBNA9AeToG_Y-N80w3dbRZZ9wrQaWujKJykeh20dZEe8fQwqChyR0NsRiETfAM=w2400"
     })
     await caustic.save();
 
@@ -52,7 +52,7 @@ const main = async () => {
         name: "Fuse",
         description: "Ladies’ man, man’s man, and all-round manly man, Fuse is a one man wrecking crew... and he knows it. Fuse exudes joy; he’s a laid-back explosives enthusiast who’s damn near covered in things that go BOOM. Fuse doesn’t lack confidence, but he often lacks a plan. He’s a blow-up-first ask-questions-later kinda guy, who’s always looking for a good scrap. Fuse grew up on Salvo--a brutal planet ruled by a rotating collection of misfit warlords bent on mayhem, murder, and good times. For most of his life, he worked as a mercenary alongside his childhood friend, Maggie. But while she aspired to become one of Salvo’s most powerful warlords, Fuse felt the pull of the arena. Fuse found his calling late in life fighting in Salvo’s bloodsport: the Bonecage. He proved to be the best, most charismatic and beloved gladiator on the planet. But he itched to join the grandest stage of them all: the Apex Games. While Salvo remained a part of Independent Space that dream was impossible, but once they joined the Syndicate, his chance arrived. It came at a price, however -- Maggie wouldn’t let him go without a fight.",
         tag_line: "Bombastic Explosives Expert",
-        img: "https://liquipedia.net/commons/images/thumb/b/b1/Fuse_Banner.png/600px-Fuse_Banner.png"
+        img: "https://lh3.googleusercontent.com/F2f5SMtlxy6bat4gfUuNqj72fZ1D_NClwyrZ38pIxxzM7fq1X6cwAVsWC4RJje9-qzWpHigxhxiclVS0Cqej5lJMuSdSD9UzgFYiH5pBdQEo8B-ANZrKmAi28SJVaokNcu2azpVPfp0=w2400"
     })
     await fuse.save();
 
@@ -60,7 +60,7 @@ const main = async () => {
         name: "Gibraltar",
         description: "Gibraltar is a gentle giant with a wild side. The son of two SARAS (Search and Rescue Association of Solace) volunteers, he has always been skilled at getting others out of dangerous situations that are common in the Outlands. However, he only began to understand the value of protecting others when he and his boyfriend stole his father’s motorcycle, took it on a joyride, and got trapped by a deadly mudslide. His parents saved them, and his father lost an arm in the process. Gibraltar has never forgotten that sacrifice and has devoted his life to helping those in need. The Apex Games didn’t change that, but they changed what it meant. Many of Gibraltar’s friends and colleagues have competed in the Games for extra money, fame, and glory over the years, and some never came home. Gibraltar joined to keep them safe and, for the first time, his skills as a rescuer and his rebellious nature worked together. He’s now become an icon in the Apex Games, putting himself in the line of fire to protect his squad and send his opponents running for cover.",
         tag_line: "Shielded Fortress",
-        img: "https://static.wikia.nocookie.net/titanfall/images/9/9a/AL_Gibraltar_Portrait.png/revision/latest?cb=20200515150512"
+        img: "https://lh3.googleusercontent.com/a3nLA3VmsqVSXKUdxnMu9O-0QIbu2fR-mJsQjYPQfUVbRv47NntJncT-j9R9PbaynuJyNjCPnpvej-FQYoakZA-Q9HDK3EsV1OszfN4FFbltJThymmMrVpp0uTgmY5Cav7_-u7DWT8k=w2400"
     })
     await gibraltar.save();
 
@@ -76,7 +76,7 @@ const main = async () => {
         name: "Lifeline",
         description: "Ajay Che, aka Lifeline, isn’t someone you would expect to find in the Apex Games. The child of wealthy war profiteers, she left home when she learned of the damage her family had caused and enlisted in the Frontier Corps, a humanitarian organization that aids Frontier communities in need. She’s since devoted her life to helping others and joined the Apex Games to fund the Frontier Corps with her winnings. Since no one in the Games is innocent — they all know what they signed up for — and every one of her victories means help for those in need, Lifeline has no problem engaging in the popular bloodsport. Or so she tells herself. She may seem sarcastic and callous, but deep down she wants to help people and make the world a better place. If that means taking a few people down in the process, so be it.",
         tag_line: "Combat Medic",
-        img: "https://static.wikia.nocookie.net/titanfall/images/2/22/AL_Lifeline_Portrait.png/revision/latest?cb=20200515151002"
+        img: "https://lh3.googleusercontent.com/Tt5jR55LcZ4p2cm4yKHsx-wHPxD_RqFCPY8CFuEsCV-fUTN3-RKKGfuFVrbWxfERxUkvmGpdzrBAaZaHyT3yHgUQn1AZW2939UvpdyOMdxpEXOOnlxaNfdLvoXwZboioaPuUmeIC3Ag=w2400"
     })
     await lifeline.save();
 
@@ -108,7 +108,7 @@ const main = async () => {
         name: "Octane",
         description: "One day, Octavio Silva was bored. In fact, he was bored most days. Son of the preoccupied CEO of Silva Pharmaceuticals and wanting for nothing in life, he entertained himself by performing death-defying stunts and posting holovids of them for his fans to gawk over. So, this day, he decided to set the course record for a nearby Gauntlet by launching himself across the finish line – using a grenade. As he lay in triage hours later, the doctors informed him that the damage done to his legs meant his daredevil days were over. That didn’t sit well with Octavio, who turned to an old friend for help: Ajay Che, who he guilted into forging an order to replace his legs with bionic ones. Suddenly able to repair his limbs at a moment’s notice, Octavio decided petty online stunts weren’t enough: the ultimate adrenaline rush, the Apex Games, was calling. Now, he’s going to become an Apex Champion doing the most incredible, death-defying moves anyone’s ever seen. Maybe in the arena, he won’t be so bored.",
         tag_line: "High-Speed Daredevil",
-        img: "https://www.vhv.rs/dpng/d/582-5827654_octane-apex-legends-png-transparent-png.png"
+        img: "https://lh3.googleusercontent.com/w0z-ftstQDfIahnSI5wL9BbS41nNcuu-wN2YBWNdMYExsvWJqUm2nEfdlgOqOr7GUiamjvHVaEtdqLmxR1ouhOEFE4Mr7T5gZn2tnXyTLINBPPaxtS_iw_MpEM-BUQ0DB_GGd0E8pVo=w2400"
     })
     await octane.save();
 
@@ -116,7 +116,7 @@ const main = async () => {
         name: "Pathfinder",
         description: "Pathfinder is the picture of optimism, despite his circumstances. A MRVN (Mobile Robotic Versatile eNtity) modified to specialize in location scouting and surveying, he booted up decades ago in an abandoned warehouse with no idea who created him or why. With only his MRVN designation to hint at his identity, Pathfinder eventually set off in search of his creator. Pathfinder has learned much in his travels since then (like how to make a mean Eastern Leviathan Stew) but hasn’t come any closer to finding his creator. Still, he’s never given up hope, and has joined the Apex Games to gain a following--and hopefully draw the attention of his maker. In the meantime, he remains enthusiastic and helpful, always ready to make new friends (then shoot them).",
         tag_line: "Forward Scout",
-        img: "https://www.pikpng.com/pngl/m/253-2534529_we-are-here-to-give-best-tips-for.png"
+        img: "https://lh3.googleusercontent.com/Ag42J-x-UcIDpuWtvUnnbThyw1L-WMi1OdrjXsLX3Djl8KhGLoMwsx97ZuNjF4pEpLmAyNimWTsPTeZjX8xBO2Ha7D3GrzGMekybVyWjFm1N8p0PbYzljepxWez0Aqm-fUPFu_-xVJs=w2400"
     })
     await pathfinder.save();
 
@@ -164,7 +164,7 @@ const main = async () => {
         name: "Wraith",
         description: "Wraith is a whirlwind fighter, able to execute deadly attacks and manipulate spacetime by opening rifts in the fabric of reality — but those abilities came at a price. Years ago, she woke up in an IMC detention facility with no memory of who she was. Senior Science Pilot Renee Blasey, who volunteered as guinea pig for her own experiments... whose partner betrayed her and locked her away… no longer existed. All that was left was a timid girl, frightened by a cacophony of voices in her head, until another version of herself appeared and taught her to listen to the voices. Following her lead, Wraith found the strength to break free from her prison and escape into a different reality - this reality. Finally free, but still robbed of her memories, Wraith continues her quest to learn more about who she was before the experiments. With so many of the Apex Games held on old IMC bases, Wraith now competes so she can access the mysterious facilities and learn more about who she was. She remains a fixture of the Apex Games, and with every match she gets closer to the truth...",
         tag_line: "Interdimensional Skirmisher",
-        img: "https://liquipedia.net/commons/images/0/0e/Wraith_apex.png"
+        img: "https://lh3.googleusercontent.com/j70HkH1CdRQOGQaWJuBpWlghysCNx0aQ51Bbc2y3102cvrRqX3xyTicxr1HZ36RWddE1ArBWzmcbIU-hyJ469d3wkrF8J5DoCq3A-J6hswRj6TaivAPmuJWijDwp3CFU3AknLOyjeKE=w2400"
     })
     await wraith.save();
 

@@ -3,6 +3,7 @@ import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import Search from '../components/Search'
 import LegendCard from '../components/LegendCard'
+import YoutubeEmbed from '../components/YoutubeEmbed'
 
 
 const Home = (props) => {
@@ -43,7 +44,10 @@ const Home = (props) => {
                 return <LegendCard key={result._id} onClick={() => showLegends(result)} image={result.img} name={result.name} />
                 })}
             </section>
-            
+            <div className="youtube-embedded">
+              <YoutubeEmbed embedId="5OUu_p16oe0" />
+            </div>
+
         </div>
     )
 }

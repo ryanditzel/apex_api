@@ -9,7 +9,7 @@ import Legends from './pages/Legends'
 import Search from './components/Search'
 import LegendDetails from './pages/LegendDetails'
 import AbilityForm from './components/AbilityForm'
-import YoutubeEmbed from './components/YoutubeEmbed';
+
 
 const  App = () => {
 
@@ -69,9 +69,6 @@ const  App = () => {
           <Route path='legends/:id' element={<LegendDetails legends={legends} abilities={abilities}/>} />
           <Route path='new' element={ <AbilityForm newAbility={newAbility} handleChange={handleChange} addAbility={addAbility}/>} />
         </Routes>
-        <div className="youtube-embedded">
-          <YoutubeEmbed embedId="5OUu_p16oe0" />
-        </div>
       </main>
       <footer>
         <Navbar />

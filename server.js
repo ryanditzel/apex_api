@@ -100,7 +100,6 @@ app.put('/api/legend/:legendId/abilities/:abilityId', async (req, res) => {
         const { legendId, abilityId } = req.params 
         const abilityData = req.body;
         await Ability.updateOne({_id: abilityId }, abilityData)
-    
         return res.status(200).send('Success');
     } catch (error) {
         return res.status(500).json({ error: error.message })

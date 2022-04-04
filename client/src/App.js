@@ -75,9 +75,9 @@ const  App = () => {
           <Route path='new' element={ <AbilityForm newAbility={newAbility} handleChange={handleChange} addAbility={addAbility}/>} />
         </Routes>
       </main>
-      <footer>
+      {/* <footer>
         <Navbar />
-      </footer>
+      </footer> */}
     </div>
   );
 }
